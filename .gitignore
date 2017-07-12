@@ -3,6 +3,9 @@
 *.ap_
 *.idea
 ./.gitignore
+.gitignore
+gradlew
+settings.gradle
 build.gradle
 ./build.gradle
 gradle*.*
