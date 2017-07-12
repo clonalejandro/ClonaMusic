@@ -1,6 +1,11 @@
 # Built application files
 *.apk
 *.ap_
+*.idea
+./.gitignore
+gradle*.*
+app/build.gradle
+app/.gitignore
 
 # Files for the ART/Dalvik VM
 *.dex
