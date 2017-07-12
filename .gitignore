@@ -4,6 +4,8 @@
 *.idea
 ./.gitignore
 .gitignore
+./gradlew
+./settings.gradle
 gradlew
 settings.gradle
 build.gradle
