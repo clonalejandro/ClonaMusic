@@ -13,5 +13,7 @@
     <color name="barFilled">#dac127</color>
     <color name="barEmpty">#403e4e</color>
 
+    <color name="title_line">#535360</color>
+
     <color name="black_overlay">#66000000</color>
 </resources>
