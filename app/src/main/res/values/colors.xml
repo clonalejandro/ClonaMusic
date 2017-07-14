@@ -3,4 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="primary">#474456</color>
+    <color name="primaryDark">#3b3849</color>
+
+    <color name="secondary">#ffffff</color>
+    <color name="secondaryDark">#ececee</color>
+
+    <color name="barFilled">#dac127</color>
+    <color name="barEmpty">#403e4e</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

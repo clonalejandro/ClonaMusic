@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context="me.clonalejandro.clonamusic.Musicplayer">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button"
+                tools:ignore="InefficientWeight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:background="#dddd"
+            android:id="@+id/imageBox">
+
+            <ImageView
+                android:id="@+id/imageSong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_report_image"
+                tools:ignore="ContentDescription,InefficientWeight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/songBox"
+            android:layout_marginBottom="270dp"
+            android:layout_marginTop="180dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/secondary"
+                android:text="@string/song_name_txt"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/artistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-70dp"
+                android:text="@string/artist_name_txt"
+                android:textColor="@color/secondary"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/loop_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/loop_btn_txt" />
+
+            <Button
+                android:id="@+id/rand_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/rand_btn_txt" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/songBar"
+            android:layout_width="match_parent"
+            android:max="100"
+            android:maxWidth="10dp"
+            android:progress="100"
+            android:layout_marginRight="6dp"
+            android:progressTint="@color/barEmpty"
+            android:thumbOffset="10000dp"
+            android:layout_marginTop="233dp"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlHardcoded" />
+
+        <SeekBar
+            android:id="@+id/songEmptyBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="233dp"
+            android:progress="10"
+            android:indeterminateTint="@color/barEmpty"
+            android:progressBackgroundTint="@color/barEmpty"
+            android:progressTint="@color/barFilled"
+            android:thumbTint="@color/barFilled"
+            android:max="100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/controls"
+            android:layout_marginTop="260dp"
+            android:layout_marginBottom="175dp">
+
+
+            <Button
+                android:id="@+id/arrow_left_btn"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/arrow_left_btn_txt"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/pause_btn"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="100dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pause_btn_txt"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/arrow_right_btn"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="100dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/arrow_left_btn_txt"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>

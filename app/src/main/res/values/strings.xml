@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ClonaMusic</string>
+
+    <string name="song_name_txt">Song Name</string>
+    <string name="artist_name_txt">Artist Name</string>
+    <string name="loop_btn_txt">B</string>
+    <string name="rand_btn_txt">B</string>
+
+    <string name="title_activity_musicplayer">Musicplayer</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
