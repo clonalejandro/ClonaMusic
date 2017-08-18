@@ -17,18 +17,19 @@
 
         <!-- ACTIVITIES - PROCESS -->
 
-        <activity android:name=".Home">
+        <activity android:name=".Home" android:theme="@style/Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Musicplayer"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_musicplayer"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme"/>
     </application>
 
 </manifest>
