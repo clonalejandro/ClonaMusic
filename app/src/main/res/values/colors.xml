@@ -16,4 +16,6 @@
     <color name="title_line">#535360</color>
 
     <color name="black_overlay">#66000000</color>
+
+    <color name="btn_info">#3498db</color>
 </resources>
