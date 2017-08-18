@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">ClonaMusic</string>
 
+    <string name="label_email_txt">Email</string>
+    <string name="label_password_txt">Password</string>
+
     <string name="song_name_txt">Song Name</string>
     <string name="artist_name_txt">Artist Name</string>
     <string name="loop_btn_txt">B</string>
