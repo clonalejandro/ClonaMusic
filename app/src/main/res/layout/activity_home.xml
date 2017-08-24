@@ -79,7 +79,7 @@
                         tools:ignore="SmallSp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:labelFor="@id/field_email"/>
+                        android:labelFor="@+id/field_email"/>
 
                     <EditText
                         android:id="@+id/field_email"
