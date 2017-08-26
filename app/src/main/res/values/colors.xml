@@ -17,5 +17,8 @@
 
     <color name="black_overlay">#66000000</color>
 
+    <color name="red">#fa5252</color>
+    <color name="green">#51cf66</color>
+
     <color name="btn_info">#3498db</color>
 </resources>
